@@ -5,9 +5,10 @@
 
     <div class="list-group list-reset">
       <a 
-        href="#" 
-        class="list-group-item list-group-item-action"
         *ngFor="let item of history"
+        href="#" 
+        (click)="searchItemSidebar( item )"
+        class="list-group-item list-group-item-action"
         > 
         {{item | titlecase}} 
       </a>
