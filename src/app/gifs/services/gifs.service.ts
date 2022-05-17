@@ -47,7 +47,6 @@ export class GifsService {
 
     this.http.get<SearchGifsResponse>(`${this.urlService}/search`, {params})
       .subscribe(response =>{
-        console.log(response.data);
         this.results = response.data;
         localStorage.setItem('results', JSON.stringify(this.results));
 
