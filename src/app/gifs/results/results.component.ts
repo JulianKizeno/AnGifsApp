@@ -3,6 +3,7 @@ import { Gif } from '../interface/gifs.interface';
 import { GifsService } from '../services/gifs.service';
 
 @Component({
+  standalone: false,
   selector: 'app-results',
   templateUrl: './results.component.html',
   styles: [
